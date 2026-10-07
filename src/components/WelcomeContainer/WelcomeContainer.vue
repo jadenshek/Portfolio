@@ -28,7 +28,8 @@ export default {
 </script>
 <style>
 #WelcomeContainer {
-  min-height: 100vh;
+  min-height: min(48rem, 85svh);
+  padding: 4rem 1.5rem;
   background-size: cover;
   width: 100%;
   overflow: hidden;
@@ -41,16 +42,10 @@ export default {
 .backgroundImage {
   object-fit: cover;
   opacity: 0.6;
-  min-width: 1440px;
-}
-
-@media screen and (max-width: 900px) {
-  #WelcomeContainer {
-    min-height: 90vh;
-  }
-
-  .backgroundImage {
-    min-width: 1024px;
-  }
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

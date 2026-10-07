@@ -38,8 +38,8 @@ export default {
   },
   data() {
     return {
-      mediaW: `${100 - this.contentWidth - 5}%`,
-      contentW: `${this.contentWidth - 5}%`,
+      mediaW: `${100 - this.contentWidth}%`,
+      contentW: `${this.contentWidth}%`,
     };
   },
 };
@@ -48,13 +48,13 @@ export default {
 <style scoped>
 .section {
   display: flex;
-  justify-content: space-evenly;
+  gap: 2rem;
   position: relative;
-  margin-bottom: 5vh;
+  margin: 2rem 0 3rem;
 }
 
 .section > div {
-  padding: 1em;
+  min-width: 0;
 }
 
 .content {
@@ -75,7 +75,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    gap: 1.5rem;
   }
   .content,
   .media {

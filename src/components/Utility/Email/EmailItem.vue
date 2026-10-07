@@ -17,7 +17,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 a {
   text-decoration: none;
   color: #d7ecc9;
@@ -28,7 +28,8 @@ h3 {
   font-style: normal;
   font-weight: 600;
   font-size: clamp(0.9rem, 0.818181818182rem + 0.30303030303vw, 1rem);
-  line-height: 44px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 
   /* identical to box height */
   text-align: center;
