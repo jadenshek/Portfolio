@@ -17,8 +17,19 @@ import PageContainer from "../../Utility/Pagination/PageContainer.vue";
 
 let experience = require("@/assets/api/experience.json");
 
-function compareYear(a, b) {
-  return b.startYear - a.startYear;
+function compareYear(first, second) {
+  const firstIsPresent = first.endYear === "Present";
+  const secondIsPresent = second.endYear === "Present";
+
+  if (firstIsPresent !== secondIsPresent) {
+    return firstIsPresent ? -1 : 1;
+  }
+
+  if (!firstIsPresent && first.endYear !== second.endYear) {
+    return Number(second.endYear) - Number(first.endYear);
+  }
+
+  return Number(second.startYear) - Number(first.startYear);
 }
 
 experience.sort(compareYear);
