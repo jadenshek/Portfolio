@@ -5,7 +5,9 @@
       :src="backgroundImg"
       alt="Background Image appears here"
     />
-    <WelcomeText />
+    <div class="section-inner">
+      <WelcomeText />
+    </div>
   </div>
 </template>
 <script>
@@ -29,7 +31,7 @@ export default {
 <style>
 #WelcomeContainer {
   min-height: min(48rem, 85svh);
-  padding: 4rem 1.5rem;
+  padding-block: 4rem;
   background-size: cover;
   width: 100%;
   overflow: hidden;

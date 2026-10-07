@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section v-if="!alignedRight" class="section">
+    <section v-if="!alignedRight" class="section section-inner">
       <div class="content">
         <slot name="content" />
       </div>
@@ -8,7 +8,7 @@
         <slot name="media" />
       </div>
     </section>
-    <section v-if="alignedRight" class="section">
+    <section v-if="alignedRight" class="section section-inner">
       <div class="media">
         <slot name="media" />
       </div>
@@ -50,7 +50,7 @@ export default {
   display: flex;
   gap: 2rem;
   position: relative;
-  margin: 2rem 0 3rem;
+  margin-block: 2rem 3rem;
 }
 
 .section > div {
