@@ -37,13 +37,23 @@ div {
   font-family: montserrat, monospace;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 80%;
+  width: min(80%, 1440px);
   margin: auto;
 }
 
@@ -58,6 +68,15 @@ div {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+a {
+  text-decoration: none;
+  color: #d7ecc9;
+}
+
+a:hover {
+  color: #fff;
 }
 
 h4 {
@@ -87,7 +106,8 @@ p {
 footer {
   background: #476039;
   color: white;
-  padding: 3rem;
+  padding: 2rem 1rem;
+  overflow-wrap: anywhere;
   font-family: montserrat, monospace;
   font-style: normal;
   font-weight: normal;
@@ -101,5 +121,11 @@ footer {
   font-weight: normal;
   font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  #app {
+    width: calc(100% - 2rem);
+  }
 }
 </style>

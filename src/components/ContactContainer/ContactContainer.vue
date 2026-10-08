@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contact-container">
     <h4>Contact Me</h4>
     <EmailItem :email="email" subject="Website Contact" />
     <p>or you can find me on</p>
@@ -63,10 +63,9 @@ export default {
 };
 </script>
 <style scoped>
-div {
+.contact-container {
   background-color: #657f56;
-  padding: max(1rem, 2vh);
-  height: 100%;
+  padding: 2rem 1rem;
 }
 
 h4,
@@ -77,21 +76,19 @@ p {
 }
 
 .other-social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
   margin: auto;
-  align-items: left;
+  align-items: center;
+  justify-content: center;
   max-width: 450px;
 }
 
 .flex-item {
-  width: clamp(40px, 30%, 100px);
+  min-width: 0;
   padding: 0;
-  margin: auto;
-  max-width: 25%;
 }
-
-
-
 .credit {
   font-size: clamp(0.5rem, 20vw, 0.6rem);
 }

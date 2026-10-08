@@ -26,7 +26,10 @@ export default {
 </script>
 <style scoped>
 img {
+  display: block;
   width: clamp(40px, 12vw, 70px);
-  
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
 </style>

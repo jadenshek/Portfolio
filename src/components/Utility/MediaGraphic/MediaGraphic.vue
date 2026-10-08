@@ -25,6 +25,8 @@ export default {
 }
 
 img {
-  min-width: 600px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 </style>

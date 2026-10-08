@@ -29,7 +29,7 @@ export default {
 .sectionContainer {
   background-color: #476039;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 p {
