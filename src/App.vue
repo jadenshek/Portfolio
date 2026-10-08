@@ -4,12 +4,14 @@
     <router-view />
 
     <footer>
-      <p class="credits">Made by Jaden Shek</p>
-      <a
-        href="https://www.flaticon.com/free-icons/letter-j"
-        title="letter j icons"
-        >Letter j icons created by Agung Rama - Flaticon</a
-      >
+      <div class="section-inner">
+        <p class="credits">Made by Jaden Shek</p>
+        <a
+          href="https://www.flaticon.com/free-icons/letter-j"
+          title="letter j icons"
+          >Letter j icons created by Agung Rama - Flaticon</a
+        >
+      </div>
     </footer>
   </div>
 </template>
@@ -53,8 +55,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: min(80%, 1440px);
-  margin: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
 }
 
 #nav {
@@ -106,7 +116,7 @@ p {
 footer {
   background: #476039;
   color: white;
-  padding: 2rem 1rem;
+  padding-block: 2rem;
   overflow-wrap: anywhere;
   font-family: montserrat, monospace;
   font-style: normal;
@@ -124,8 +134,8 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  #app {
-    width: calc(100% - 2rem);
+  .section-inner {
+    padding-inline: 1rem;
   }
 }
 </style>

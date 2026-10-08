@@ -1,25 +1,27 @@
 <template>
   <div class="contact-container">
-    <h4>Contact Me</h4>
-    <EmailItem :email="email" subject="Website Contact" />
-    <p>or you can find me on</p>
+    <div class="section-inner">
+      <h4>Contact Me</h4>
+      <EmailItem :email="email" subject="Website Contact" />
+      <p>or you can find me on</p>
 
-    <div class="other-social">
-      <div
-        v-for="socialItem in socialItems"
-        :key="socialItem.path"
-        class="flex-item"
-      >
-        <SocialItem
-          :svgPath="socialItem.path"
-          :altText="socialItem.alt"
-          :href="socialItem.href"
-        />
+      <div class="other-social">
+        <div
+          v-for="socialItem in socialItems"
+          :key="socialItem.path"
+          class="flex-item"
+        >
+          <SocialItem
+            :svgPath="socialItem.path"
+            :altText="socialItem.alt"
+            :href="socialItem.href"
+          />
+        </div>
       </div>
+      <p class="credit">
+        Icons sourced from <a href="https://iconmonstr.com">iconmonstr.com</a>
+      </p>
     </div>
-    <p class="credit">
-      Icons sourced from <a href="https://iconmonstr.com">iconmonstr.com</a>
-    </p>
   </div>
 </template>
 <script>
@@ -65,7 +67,7 @@ export default {
 <style scoped>
 .contact-container {
   background-color: #657f56;
-  padding: 2rem 1rem;
+  padding-block: 2rem;
 }
 
 h4,

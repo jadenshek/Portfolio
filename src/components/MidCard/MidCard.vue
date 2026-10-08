@@ -1,12 +1,14 @@
 <template>
   <div class="sectionContainer">
-    <div class="midText">
-      <p>
-        If you have any questions about tutoring, don’t hesitate to contact me
-        at
-      </p>
+    <div class="section-inner">
+      <div class="midText">
+        <p>
+          If you have any questions about tutoring, don’t hesitate to contact me
+          at
+        </p>
+      </div>
+      <EmailItem :email="email" />
     </div>
-    <EmailItem :email="email" />
   </div>
 </template>
 
@@ -29,7 +31,7 @@ export default {
 .sectionContainer {
   background-color: #476039;
   width: 100%;
-  padding: 1rem;
+  padding-block: 1rem;
 }
 
 p {
