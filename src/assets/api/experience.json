@@ -18,32 +18,26 @@
         "title":"Volunteer Computing Teaching Assistant",
         "description":"Volunteered in at a secondary school and aided the teacher in various classes between S2 and S5 to help students who were struggling and developed interpersonal and communicative skills to teach and transfer information in a way the student can understand."
     },
-    {
-        "startYear":"2019",
-        "endYear":"Present",
-        "title":"Online Forum and Discord helper",
-        "description":"Answers computing related questions on online forums and a discord server to help others on the internet understand concepts such as Object-Oriented Programming, frontend and backend development or general computing topics better."
-    },
-    {
-        "startYear":"2023",
-        "endYear":"Present",
-        "title":"Code Cadets Tutor",
-        "description":"Worked in primary schools across Edinburgh to teach students the basics of programming - including Kodable, CodeSpark, Scratch, Python, and Web Development"
-    },
-    {
-        "startYear":"2023",
-        "endYear":"2024",
-        "title":"FunTech Tutor",
-        "description":"Worked in a virtual environment to tutor pupils about basic programming in Python, extending to PyGame and C++"
-    },
-    {
-        "startYear":"2025",
+    {"startYear":"2023",
         "endYear":"2025",
-        "title":"Student Technician at the University of Edinburgh",
-        "description":"Worked as a student technician at the University Makerspace to produce hardware solutions to help students with their projects for 'System Design Project'. Includes 3D printing solutions, configuring raspberry Pis and arduinos."
-    }
-
-
-   
+        "title":"Code Cadets Tutor",
+        "description":"Taught students at an after school club aged between 6 and 12 to introduce programming concepts such as sequencing, loops and conditionals weekly.\n\nManaged different classes of roughly 20 students with students progressing quickly after the initial 4 weeks of joining the club.\n\nProactively looked for students who showed signs of struggle and identified root causes for struggle and addressed them."
+    },
+    {"startYear":"2024",
+        "endYear":"2024",
+        "title":"Funtech Tutor",
+        "description":"Taught virtually for students aged 11 to 18 on various technical concepts including basic Python (conditionals and loops), Object Oriented Programming, Game Development using Pygame and C++ and Memory management"
+    },
+    {"startYear":"2025",
+        "endYear":"2025",
+        "title":"Hardware Technician @ the University of Edinburgh",
+        "description":"Problem solving to manage tickets for different group projects within a module to produce 3D prints, soldering and fixing problematic hardware issues.\n\nAnswering any technical questions students may have about their project.\n\nConsulted the lead technician for issues out of my control such as logistic or procurement issues before relaying a confident answer back to students."
+    },
+   {
+       "startYear":"2025",
+       "endYear":"Present",
+       "title":"Junior Software Engineer @ Dayshape",
+       "description":"Managed many software development tasks including implementing frontend and backend work in C# and Vue from Jira tickets, contributed to feature delivery and collaborated with team members to ensure timely completion of projects."
+   }
 
 ]
