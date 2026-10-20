@@ -16,9 +16,8 @@ export default {
 #WelcomeText {
   min-height: 20vh;
   text-align: left;
-  margin-left: 30px;
-  position: absolute;
-  top: 4rem;
+  position: relative;
+  width: 100%;
 }
 
 h1,

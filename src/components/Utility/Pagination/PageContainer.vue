@@ -39,46 +39,10 @@ export default {
 <style scoped>
 #pageContainer {
   display: flex;
-  margin: auto;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-around;
-  flex-grow: 1;
-
-  min-width: 50%;
-  margin:1rem;
-  position: absolute;
-  top:650px;
-  left:10vw
+  gap: 1rem;
+  width: 100%;
+  margin: 1rem 0 0;
 }
-@media screen and (max-width:1500px) {
-  #pageContainer{
-    top:600px;
-    left:10vw
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #pageContainer{
-    top:600px;
-    left:20vw;
-  }
-}
-
-@media screen and (max-width:900px) {
-  #pageContainer{
-    top:650px;
-    width:75%;
-    left:10vw
-  }
-}
-
-@media screen and (max-width:600px) {
-  #pageContainer{
-    top:575px;
-    left:5vw;
-    width:75%;
-  }
-}
-
-
 </style>

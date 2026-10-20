@@ -3,6 +3,7 @@
     :disabled="disabled"
     :class="{ hovering: !disabled, disable: disabled }"
     :title="buttonText"
+    :aria-label="buttonText"
   >
     <img :src="svgPath" :alt="buttonAlt" />
   </button>
@@ -29,8 +30,9 @@ button {
   border-radius: 1rem;
   background-color: #657f56;
   color: #b3cca3;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.75rem;
+  width: 2.75rem;
+  flex-shrink: 0;
 
   display: flex;
   align-items: center;
@@ -44,5 +46,10 @@ button {
 
 .disable {
   opacity: 50%;
+}
+
+button:focus-visible {
+  outline: 2px solid #476039;
+  outline-offset: 3px;
 }
 </style>

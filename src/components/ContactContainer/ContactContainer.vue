@@ -1,25 +1,27 @@
 <template>
-  <div>
-    <h4>Contact Me</h4>
-    <EmailItem :email="email" subject="Website Contact" />
-    <p>or you can find me on</p>
+  <div class="contact-container">
+    <div class="section-inner">
+      <h4>Contact Me</h4>
+      <EmailItem :email="email" subject="Website Contact" />
+      <p>or you can find me on</p>
 
-    <div class="other-social">
-      <div
-        v-for="socialItem in socialItems"
-        :key="socialItem.path"
-        class="flex-item"
-      >
-        <SocialItem
-          :svgPath="socialItem.path"
-          :altText="socialItem.alt"
-          :href="socialItem.href"
-        />
+      <div class="other-social">
+        <div
+          v-for="socialItem in socialItems"
+          :key="socialItem.path"
+          class="flex-item"
+        >
+          <SocialItem
+            :svgPath="socialItem.path"
+            :altText="socialItem.alt"
+            :href="socialItem.href"
+          />
+        </div>
       </div>
+      <p class="credit">
+        Icons sourced from <a href="https://iconmonstr.com">iconmonstr.com</a>
+      </p>
     </div>
-    <p class="credit">
-      Icons sourced from <a href="https://iconmonstr.com">iconmonstr.com</a>
-    </p>
   </div>
 </template>
 <script>
@@ -63,10 +65,9 @@ export default {
 };
 </script>
 <style scoped>
-div {
+.contact-container {
   background-color: #657f56;
-  padding: max(1rem, 2vh);
-  height: 100%;
+  padding-block: 2rem;
 }
 
 h4,
@@ -77,21 +78,19 @@ p {
 }
 
 .other-social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
   margin: auto;
-  align-items: left;
+  align-items: center;
+  justify-content: center;
   max-width: 450px;
 }
 
 .flex-item {
-  width: clamp(40px, 30%, 100px);
+  min-width: 0;
   padding: 0;
-  margin: auto;
-  max-width: 25%;
 }
-
-
-
 .credit {
   font-size: clamp(0.5rem, 20vw, 0.6rem);
 }

@@ -20,30 +20,30 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .workItem {
   border-radius: 15px;
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: minmax(6rem, 25%) minmax(0, 1fr);
+  gap: 0.75rem 1rem;
   grid-template-rows: auto;
   grid-template-areas:
     "year title"
     ". description";
   margin-bottom: 20px;
-  max-height: 300px;
 }
 
 .year {
   color: #000;
   text-align: right;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 
   flex-wrap: nowrap;
-  min-width: 25%;
+  min-width: 0;
   grid-area: year;
 }
 
@@ -78,6 +78,17 @@ export default {
   grid-area: description;
 }
 
-@media screen {
+@media screen and (max-width: 600px) {
+  .workItem {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "year"
+      "title"
+      "description";
+  }
+
+  .year {
+    text-align: left;
+  }
 }
 </style>

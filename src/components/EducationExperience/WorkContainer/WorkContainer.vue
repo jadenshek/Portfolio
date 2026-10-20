@@ -82,17 +82,8 @@ export default {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height:max(700px,50vh);
+  min-width: 0;
+  width: 100%;
   align-self: flex-start;
-  position: relative;
-  margin-bottom: 5vh;
 }
-
-@media screen and (max-width: 900px) {
-  #experience{
-    height:max(600px,60vh);
-  }
-  
-}
-
 </style>

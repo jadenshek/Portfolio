@@ -26,13 +26,13 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .EducationItem {
   border-radius: 15px;
   border: 3px solid #657f56;
   display: flex;
   justify-content: space-between;
-  height: max(5vh, 100px);
+  min-height: 100px;
   margin-bottom: 20px;
 }
 
@@ -69,9 +69,9 @@ export default {
   font-weight: 400;
   line-height: normal;
 
-  width: 50%;
-  margin-top: 1em;
-  margin-right: 0.5em;
+  min-width: 0;
+  width: 60%;
+  padding: 1rem 0.5rem;
 }
 
 .qualification {
@@ -84,5 +84,27 @@ export default {
   font-size: clamp(0.9rem, 0.818181818182rem + 0.30303030303vw, 1rem);
   flex-wrap: wrap;
   justify-content: end;
+}
+
+@media screen and (max-width: 480px) {
+  .EducationItem {
+    flex-direction: column;
+  }
+
+  .year {
+    align-items: flex-start;
+    padding: 0.75rem 1rem 0;
+    text-align: left;
+  }
+
+  .qualificationContainer {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    text-align: left;
+  }
+
+  .qualInfo {
+    justify-content: flex-start;
+  }
 }
 </style>
