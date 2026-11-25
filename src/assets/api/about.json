@@ -1,4 +1,5 @@
 [
-    {"title":"About Me","subtext":"I'm a Computer Science student based in Edinburgh. I enjoy learning new things. At the moment, I'm currently interested in learning about hardware, as well as backend development."},
-    {"title":"Tutoring","subtext":"I offer a tutoring service for high school students taking their National 5s (GCSE) and Highers (A Level) for Computing Science. I also provide a mentoring service for developers of any skill who need guidance or a second pair of eyes to aid their project."}
+    {"title":"About Me","subtext":"I'm a Software Developer based in Edinburgh. I enjoy learning new things. At the moment, I'm currently interested in learning about hardware, as well as backend development."},
+    {"title":"Interests","subtext":"Other than the technical aspects of software development, I enjoy trying new things and exploring different hobbies and activities such as bouldering and running. You can also find me holed up in different sides of nerd culture, whether it's gushing about musicals, or playing music at a Jazz Bar - or playing all sorts of games - both physically and digitally."}
+
 ]
