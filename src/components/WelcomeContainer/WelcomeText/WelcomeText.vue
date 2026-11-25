@@ -2,7 +2,7 @@
   <div id="WelcomeText">
     <div class="intro"><h1>Hi! I'm Jaden</h1></div>
     <div class="flavourText">
-      <h2>I am a student and I like to make things!</h2>
+      <h2>I am a developer and I like to make things!</h2>
     </div>
     <div class="greeting"><p>Welcome to my website!</p></div>
   </div>

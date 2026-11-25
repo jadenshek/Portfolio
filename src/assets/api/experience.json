@@ -30,14 +30,14 @@
     },
     {"startYear":"2025",
         "endYear":"2025",
-        "title":"Hardware Technician @ the University of Edinburgh",
+        "title":"Hardware Technician @ The University of Edinburgh",
         "description":"Problem solving to manage tickets for different group projects within a module to produce 3D prints, soldering and fixing problematic hardware issues.\n\nAnswering any technical questions students may have about their project.\n\nConsulted the lead technician for issues out of my control such as logistic or procurement issues before relaying a confident answer back to students."
     },
    {
        "startYear":"2025",
        "endYear":"Present",
-       "title":"Junior Software Engineer @ Dayshape",
-       "description":"Managed many software development tasks including implementing frontend and backend work in C# and Vue from Jira tickets, contributed to feature delivery and collaborated with team members to ensure timely completion of projects."
+       "title":"Software Engineer @ Dayshape",
+       "description":"Managed many software development tasks including implementing frontend and backend work in C# and Vue from Jira tickets, contributed to feature delivery and collaborated with team members to ensure timely completion of projects. Focusing on delivering high-quality code while paying attention to both the big picture and the finer details to ensure customers receive what they asked for."
    }
 
 ]
